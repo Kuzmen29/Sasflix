@@ -1,3 +1,80 @@
 .postItem {
     
 }
+
+.comments {
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    &__header {
+        font-family: "SF Pro Text Bold", sans-serif;
+        font-size: 28px;
+        padding: 32px 0 0 0 ;
+    }
+
+}
+
+.comment {
+    
+    display: flex;    
+    gap: 8px;
+    align-items: flex-start;
+
+    &__image {
+        flex-shrink: 0; 
+    }
+    &__main {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    &__author {
+        font-family: "SF Pro Text Semibold";
+        font-size: 20px;
+        letter-spacing: -1px;
+    }
+    &__text {
+        font-family: "SF Pro Text Regular";
+        font-size: 20px;
+        letter-spacing: -1px;
+        line-height: 0.2;
+    }
+    &__footer {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    &__date {
+        font-family: "SF Pro Text Regular";
+        font-size: 14px;
+        letter-spacing: -0.08px;
+        color: rgba(4, 4, 5, 0.22);
+    }
+    &__delete {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        font-family: "SF Pro Text Regular";
+        font-size: 13px;
+        letter-spacing: -0.08px;
+      //  line-height: 0.12;
+        color: rgba(255, 59, 48, 1);
+        cursor: pointer;
+        border: none;
+
+        &::after {
+            content: " ";
+            display: block;
+            width: 40px;
+            height: 0.5px;
+            background-color: rgba(255, 59, 48, 1); 
+        }
+    }
+}

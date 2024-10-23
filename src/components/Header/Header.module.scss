@@ -1,13 +1,11 @@
 .header {
     padding-bottom: 48px;
 
-    font-family: "SF Pro Display", sans-serif;
+    font-family: "SF Pro Display Bold", sans-serif;
     
     &__title {
-
-        text-align: center;
         font-size: 40px;
-
+     //   line-height: 0.12;
         color: rgba(255, 107, 0, 1);
     }
 }

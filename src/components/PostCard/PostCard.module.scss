@@ -1,3 +1,192 @@
 .postCard {
-    
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    &__title {
+        font-family: "SF Pro Text Bold", sans-serif;
+        font-size: 28px;
+
+        color: rgba(5, 9, 14, 1);
+
+        letter-spacing: -1.45px;
+    }
+
+    &__description {
+        font-size: 20px;
+        font-family: "SF Pro Text Regular", sans-serif;
+
+        color: rgba(5, 9, 14, 1);
+
+        letter-spacing: -1px;
+    }
+
+    &__footer {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+}
+
+.reaction {
+    display: flex;
+    gap: 1px;
+
+    font-size: 14px;
+    font-family: "SF Pro Text Regular", sans-serif;
+}
+
+.like {
+    padding: 8px 8px 8px 12px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 6px;
+
+    background-color: rgba(4, 4, 5, 0.04);
+
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+
+    &_isLike {
+        background-color: rgba(255, 59, 48, 1);
+    }
+
+    cursor: pointer;
+
+    &__label {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+    &__title {
+        color: rgba(4, 4, 5, 1);
+        letter-spacing: -0.08px;
+
+        &_isLike {
+            color: white;
+        }
+    }
+    &__value {
+        opacity: 0.3;
+        letter-spacing: -1px;
+
+        &_isLike {
+            opacity: 1;
+            color: white;
+        }
+    }
+}
+
+.dislike {
+    padding: 8px 8px 8px 12px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 6px;
+
+    background-color: rgba(4, 4, 5, 0.04);
+
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+
+    cursor: pointer;
+
+    &_isDislike {
+        background-color: rgba(4, 4, 5, 1);
+    }
+
+    &__title {
+        color: rgba(4, 4, 5, 1);
+        letter-spacing: -0.08px;
+
+        &_isDislike {
+            color: white;
+        }
+    }
+
+    &__label {
+        display: flex;
+        gap: 4px;
+    }
+    &__value {
+        letter-spacing: -1px;
+        opacity: 0.3;
+
+        &_isDislike {
+            opacity: 0.4;
+            color: rgba(255, 255, 255, 0.95);
+        }
+    }
+}
+
+.actions {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.comments {
+    &__link {
+        font-family: "SF Pro Text Regular", sans-serif;
+        font-size: 14px;
+        letter-spacing: -0.08px;
+        color: rgba(255, 107, 0, 1) !important;
+
+        &::after {
+            content: " ";
+            display: block;
+            width: 108px;
+            height: 0.5px;
+            background-color: rgba(255, 107, 0, 1);
+        }
+    }
+}
+.date {
+    &__title {
+        color: rgba(4, 4, 5, 0.22);
+    }
+}
+
+.tags {
+    display: flex;
+    padding-left: 14px;
+    gap: 4px;
+
+    &__tag {
+        padding: 4px;
+        display: flex;
+        align-items: center;
+
+        background-color: rgba(120, 120, 128, 0.08);
+        border-radius: 3px;
+
+        color: rgba(4, 4, 5, 1);
+
+        letter-spacing: -0.08px;
+
+        &:first-child {
+            position: relative;
+            &::before {
+                position: absolute;
+                content: " ";
+                display: block;
+                width: 0;
+                height: 0;
+                left: -12px;
+                border-top: 14px solid transparent;
+                border-right: 14px solid rgba(120, 120, 128, 0.08);
+                border-bottom: 14px solid transparent;
+                background-color: white;
+            }
+        }
+    }
 }
