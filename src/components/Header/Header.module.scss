@@ -1,0 +1,13 @@
+.header {
+    padding-bottom: 48px;
+
+    font-family: "SF Pro Display", sans-serif;
+    
+    &__title {
+
+        text-align: center;
+        font-size: 40px;
+
+        color: rgba(255, 107, 0, 1);
+    }
+}

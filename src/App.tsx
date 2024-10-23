@@ -1,20 +1,20 @@
 import React from 'react';
 import "./styles/App.scss";
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Post from './pages/Post/Post';
 import PostItem from './pages/PostItem/PostItem';
+import Header from './components/Header/Header';
+import Posts from './pages/Posts/Posts';
 
 function App() {
     return (
         <div className="App">
-            <header>
 
-            </header>
-
+            <Header/>
+            
             <main>
                 <BrowserRouter>
                     <Routes>
-                        <Route path='/' element={<Post />} />
+                        <Route path='/' element={<Posts />} />
                         <Route path='/post/:id' element={<PostItem />} />
                     </Routes>
                 </BrowserRouter>
