@@ -1,26 +1,21 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import styles from "./Posts.module.scss";
-import { IPost, IPostsResponse } from '../../types';
+import { IPost,  } from '../../types';
 import PostCard from '../../components/PostCard/PostCard';
 import Container from '../../components/Container/Container';
+import usePosts from '../../hooks/usePosts';
+
 
 export default function Posts() {
 
-    const [posts, setPosts] = useState<IPost[]>([])
+    const posts = usePosts();
 
-    useEffect(() => {
-        (async () => {
-            let response = await fetch('https://dummyjson.com/posts?limit=5');
-            let posts: IPostsResponse = await response.json();
-            setPosts(posts.posts)
-        })()
-    }, [])
     return (
         <section className={styles.posts}>
             <Container>
                 <div className={styles.posts__list}>
                     {
-                        posts.map((post: IPost) => <PostCard post={post} />)
+                        posts.map((post: IPost) => <PostCard key={post.id} post={post} />)
                     }
                 </div>
             </Container>

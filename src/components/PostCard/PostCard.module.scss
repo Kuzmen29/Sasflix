@@ -11,7 +11,7 @@
 
     &__title {
         font-family: "SF Pro Text Bold", sans-serif;
-        font-size: 28px;
+        font-size: 1.75rem;
 
         color: rgba(5, 9, 14, 1);
 
@@ -19,7 +19,7 @@
     }
 
     &__description {
-        font-size: 20px;
+        font-size: 1.25rem;
         font-family: "SF Pro Text Regular", sans-serif;
 
         color: rgba(5, 9, 14, 1);
@@ -38,7 +38,7 @@
     display: flex;
     gap: 1px;
 
-    font-size: 14px;
+    font-size: 0.875rem;
     font-family: "SF Pro Text Regular", sans-serif;
 }
 
@@ -137,14 +137,14 @@
 .comments {
     &__link {
         font-family: "SF Pro Text Regular", sans-serif;
-        font-size: 14px;
+        font-size: 0.875rem;
         letter-spacing: -0.08px;
         color: rgba(255, 107, 0, 1) !important;
 
         &::after {
             content: " ";
             display: block;
-            width: 108px;
+            width: 6.75em;
             height: 0.5px;
             background-color: rgba(255, 107, 0, 1);
         }
@@ -181,10 +181,10 @@
                 display: block;
                 width: 0;
                 height: 0;
-                left: -12px;
-                border-top: 14px solid transparent;
-                border-right: 14px solid rgba(120, 120, 128, 0.08);
-                border-bottom: 14px solid transparent;
+                left: -0.75rem;
+                border-top: 0.875rem solid transparent;
+                border-right: 0.875rem solid rgba(120, 120, 128, 0.08);
+                border-bottom: 0.875rem solid transparent;
                 background-color: white;
             }
         }
